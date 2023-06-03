@@ -8,6 +8,7 @@
 - Html
 - Css
 - Js
+- Bootstrap
 
 <p align="center">
   <a href="https://yosefhassouna2001.github.io/Rolex/" target="_blank">
