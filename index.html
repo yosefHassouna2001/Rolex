@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrp v 5.2.1 css "offline" -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <!-- bootstrp icon v1.9.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- my custom style css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/img/main/logo.svg" type="image/x-icon">
+    <title>Rolex</title>
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/main/logo.svg" alt="Rolex logo">
+                    <img src="assets/img/main/favicon.png" class="d-none" alt="Rolex logo">
+                    <span class="fw-semibold">Rolex</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featured">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">New</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="div actions d-flex gap-4 pe-5">
+                        <i class="bi bi-moon"></i>
+                        <i class="bi bi-bag position-relative" data-bs-toggle="offcanvas" data-bs-target="#list-products-data"
+                            aria-controls="list-products-data">
+                            <span class="numProduct  fst-normal position-absolute top-0 start-100 translate-middle 
+                            badge rounded-circle ">
+                                0
+                              </span></i>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- list products data -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="list-products-data" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">List Products</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
+    </div>
+
+    
+    <main class="pt-5 pt-lg-0">
+        <div class="container pt-5 pt-lg-0">
+            <div class="row  align-items-center">
+                <div class="col-md-6 col-lg-8">
+                    <div class="content position-relative">
+                        <div class="socail-links">
+                            <a href="https://www.facebook.com/rolex" target="_blank">Facebook</a>
+                            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.rolex.com"
+                                target="_blank">Twitter</a>
+                            <a href="https://www.facebook.com/rolex" target="_blank">Instagram</a>
+                        </div>
+                        <div class="content-text">
+                            <h1 class="mb-3 fw-bold display-6">NEW WATCH <br> COLLECTIONS B720</h1>
+                            <p class="fs-5 fw-light pe-5">Latest arrival of the new imported watches of the B720 series,
+                                with a modern and
+                                resistant design.</p>
+                            <div class="price ">$1245</div>
+                            <div class="btn-action d-flex flex-wrap align-items-center">
+                                <button class="discover text-capitalize">discover</button>
+                                <button class="addCart text-uppercase ">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="imgbox">
+                        <img src="assets/img/main/home.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FEATURED sec -->
+    <section class="featured py-5" id="featured">
+        <div class="container py-5">
+            <h2>FEATURED</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pt-5  gy-4">
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        <span class="catg">SALE</span>
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        <span class="catg">SALE</span>
+                        <img src="assets/img/featured/featured2.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">INGERSOLL
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">200</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        <span class="catg">SALE</span>
+                        <img src="assets/img/featured/featured3.png" class="img-fluid w-50 m-auto my-4" alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">ROSE WATCH 
+                            </h5>
+                            <h5 class="card-subtitle  ">
+                                $<span class="price">890</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end FEATURED sec -->
+
+    <div class="toast-container position-fixed bottom-0 start-0 p-3">
+        <div id="liveToast" class="toast text-bg-success " role="alert" aria-live="assertive" aria-atomic="true">
+            <div class=" d-flex align-items-center p-2">
+              <p>The product has been successfully added to the cart ...</p>
+              <button type="button" class="btn ms-auto " data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+
+   
+    <!-- our story sec -->
+    <section class="ourStory mt-5">
+            <div class="container ">
+                <div class="row  align-items-center h-100 ">
+                    <div class="leftBox col-12 col-lg-6 align-items-center d-flex justify-content-center">
+                        <!-- <div class="content  w-75 h-75 position-absolute  start-50 translate-middle">
+                        </div> -->
+                        <div class="imgParnt  ">
+                            <div class="imgBoxx   ">
+                                <img src="assets/img/story.png" class=" w-100 imgg" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="imgParnt bg-danger  h-100 position-relative">
+                            <div class="imgBox h-100 position-absolute ">
+                                <img src="assets/img/story.png" class="h-100 w-100" alt="">
+                            </div>
+                        </div> -->
+    
+                    </div>
+                    <div class="rightBox col-12 col-lg-6 p-5">
+                        <div class="content-text p-5">
+                            <h2 class=" text-uppercase">our story</h2>
+                            <h1 class="mb-3 fw-bold display-6">Inspirational Watch of <br> this year</h1>
+                            <p class="fs-5 fw-light pe-5">The latest and modern watches of this year, is available in various presentations in this store, discover them now.</p>
+                            <div class="btn-action ">
+                                <button class="op discover text-capitalize">discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- products sec -->
+    <section class="products py-5" id="products">
+        <div class="container py-5">
+            <h2>PRODUCTS</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pt-5  g-5  w-75 m-auto">
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button  class=" catgbtn  border-0 " id="addCartBag"><span class="catg"><i class="bi bi-bag fs-3 " ></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button  class=" catgbtn  border-0 " id="addCartBag"><span class="catg"><i class="bi bi-bag fs-3 " ></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button  class=" catgbtn  border-0 " id="addCartBag"><span class="catg"><i class="bi bi-bag fs-3 " ></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button  class=" catgbtn  border-0 " id="addCartBag"><span class="catg"><i class="bi bi-bag fs-3 " ></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center">
+                        
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button  class=" catgbtn  border-0 " id="addCartBag"><span class="catg"><i class="bi bi-bag fs-3 " ></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- end products sec -->
+
+     <!--  story sec -->
+ 
+    <section class="story ">
+        <div class="container ">
+            <div class="row  align-items-center h-100 ">
+                <div class="leftBox col-12 col-lg-6 align-items-center d-flex justify-content-center">
+                   <div id="silshows" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <div class="content w-50">
+                                    <div class="qouat-icon">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius explicabo rerum,
+                                        porro quo fugit cumque a animi tempora error totam?</p>
+                                    <div class="client">
+                                        <div class="imgbox">
+                                            <img src="assets/img/testimonial/testimonial1.jpg" alt="">
+                                        </div>
+                                        <div class="client-info">
+                                            <h5 class="name">Lee Doe</h5>
+                                            <div class="name">SEO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="content w-50">
+                                    <div class="qouat-icon">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius explicabo rerum,
+                                        porro quo fugit cumque a animi tempora error totam?</p>
+                                    <div class="client">
+                                        <div class="imgbox">
+                                            <img src="assets/img/testimonial/testimonial1.jpg" alt="">
+                                        </div>
+                                        <div class="client-info">
+                                            <h5 class="name">Lee Doe</h5>
+                                            <div class="name">SEO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="content w-50">
+                                    <div class="qouat-icon">
+                                        <i class="bi bi-quote"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius explicabo rerum,
+                                        porro quo fugit cumque a animi tempora error totam?</p>
+                                    <div class="client">
+                                        <div class="imgbox">
+                                            <img src="assets/img/testimonial/testimonial1.jpg" alt="">
+                                        </div>
+                                        <div class="client-info">
+                                            <h5 class="name">Lee Doe</h5>
+                                            <div class="name">SEO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#silshows"
+                            data-bs-slide="prev">
+                            <i class="bi bi-arrow-left"></i>
+
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#silshows"
+                            data-bs-slide="next">
+
+                            <i class="bi bi-arrow-right "></i>
+
+                        </button>
+                    </div>
+
+                </div>
+                <div class="rightBox col-12 col-lg-6 p-5">
+                     <!-- <div class="content  w-75 h-75 position-absolute  start-50 translate-middle">
+                    </div> -->
+                    <div class="imgParnt  ">
+                        <div class="imgBoxx   ">
+                            <img src="assets/img/story.png" class=" w-100 imgg2" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="imgParnt bg-danger  h-100 position-relative">
+                        <div class="imgBox h-100 position-absolute ">
+                            <img src="assets/img/story.png" class="h-100 w-100" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+</section>
+    <!-- end story sec -->
+   
+    <!-- FEATURED sec -->
+    <section class="featured py-5" id="news">
+        <div class="container py-5">
+            <h2>NEW ARRIVALS</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5  gy-4">
+                <div class="col">
+                    <div class="card bg-transparent text-center position-relative">
+                        <span class="new">NEW</span>
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center position-relative">
+                        <span class="new">NEW</span>
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center position-relative">
+                        <span class="new">NEW</span>
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent text-center position-relative">
+                        <span class="new">NEW</span>
+                        <img src="assets/img/featured/featured1.png" class="img-fluid w-50 m-auto my-4 " alt="featured1">
+                        <div class="card-body">
+                            <h5 class="card-title">JAZZMASTER
+                            </h5>
+                            <h5 class="card-subtitle ">
+                                $<span class="price">1050</span>
+                            </h5>
+                            <button class="addCart addCartBag" id="addCartBag">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- end FEATURED sec -->
+
+    <section class="subsicribe py-5" >
+        <div class="container p-5 ">
+            <div class="row row-cols-1 row-cols-md-2  p-3 gy-4">
+                <div class="col">
+                    <div>
+                        <h2>Subscribe Our <br> Newsletter</h2>
+                        <p class="pra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsum? Eligendi fuga molestias in blanditiis dolore ducimus eos doloribus laborum?</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <form action="#" method="get" target="_blank" class="newsletter-form">
+                        <input name="EMAIL" placeholder="Enter your email" required type="email">
+                        <div class="button">
+                            <button class="sub-btn">SUBSCIBE</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="up">
+        top
+    </div>
+    <!-- <section class="min-vh-100 bg-info">
+    </section> -->
+    <!-- Bootstrp v 5.2.1 script js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- my script js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
