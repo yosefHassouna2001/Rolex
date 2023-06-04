@@ -12,6 +12,6 @@
 
 <p align="center">
   <a href="https://yosefhassouna2001.github.io/Rolex/" target="_blank">
-    <img src="assets/img/Rolex.png" width="600">
+    <img src="assets/img/Rolex.png" width="800">
   </a>
 </p>
